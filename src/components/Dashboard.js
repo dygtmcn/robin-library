@@ -6,7 +6,7 @@ import DashboardContent from "./DashboardContent";
 import "../styles/Dashboard.css";
 
 const Dashboard = () => {
-  const { isAuthenticated, logout } = useAuth();
+  const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   // Eğer giriş yapılmamışsa, login sayfasına yönlendir

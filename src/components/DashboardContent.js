@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/DashboardContent.css";
 import BookList from "./BookList";
-import Footer from "./Footer"; // Footer bileşenini ekledik
 
 const DashboardContent = () => {
   return (
