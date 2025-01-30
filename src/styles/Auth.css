@@ -1,0 +1,127 @@
+.body{
+    font-family: "Lato", sans-serif;
+}
+
+/* Tüm giriş/kayıt sayfaları için ortak stiller */
+.auth-container {
+    margin: 80px 3rem;
+    min-height: 80vh;
+    text-align: center;
+    background-color: #fef8f3;
+    border-radius: 20px;
+
+    /* İçeriği ortalamak için */
+    display: flex;
+    justify-content: center; /* Yatay merkezleme */
+    align-items: flex-start; /* Üst hizalamayı sabit tut */
+    padding-top: 5rem; /* Kutuların üst hizasını eşitle */
+}
+
+/* İçeriği sabit bir yükseklikte tut */
+.auth-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px; /* Bütün kutuların genişliği eşitlendi */
+    min-height: 400px; /* Minimum yükseklik ayarlandı */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* İçeriğin eşit dağılmasını sağlar */
+}
+/* Eğer içerik uzarsa kutunun aşağı doğru genişlemesine izin ver */
+.auth-content {
+    flex-grow: 1;
+}
+
+/* Input Grupları */
+.input-group {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.auth-btn {
+    width: 45%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pink-btn {
+    background-color: #fccace;
+    color: #333;
+}
+
+.pink-btn:hover {
+    background-color: #f7505c;
+    color: white;
+}
+
+.yellow-btn {
+    background-color: #fce7bb;
+    color: #333;
+}
+
+.yellow-btn:hover {
+    background-color: #f9c355;
+    color: white;
+}
+
+.auth-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Terms & Conditions */
+.terms-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.terms-link {
+    color: #f7505c;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+/* Already have an account? */
+.auth-text {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.auth-link {
+    color: #f7505c;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}

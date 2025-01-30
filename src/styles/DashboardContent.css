@@ -1,0 +1,108 @@
+/* Dashboard Summary - Ana Arka Plan */
+.dashboard-summary {
+    margin: 80px 3rem;
+    border-radius: 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+/* Dashboard İçindeki Box Konteyner */
+.dashboard-box-container {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Dashboard İçindeki Box */
+.dashboard-box {
+    flex: 1 1 calc(45% - 1rem);
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1rem;
+    text-align: left;
+}
+
+/* Profil Alanı */
+.profile-box {
+    padding: 2rem;
+}
+
+/* Profil Üst Kısım */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    width: 80px; /* 🔹 Yuvarlak boyut */
+    height: 80px;
+    border-radius: 50%;
+    background-color: pink;
+    display: flex;
+    align-items: center; /* 🔹 Dikey hizalama */
+    justify-content: center; /* 🔹 Yatay hizalama */
+    font-size: 2.5rem; /* 🔹 Harfi büyüt */
+    font-weight: bold;
+    color: white; /* 🔹 Harf rengi */
+    text-transform: uppercase; /* 🔹 Harfi büyük yap */
+}
+
+/* Profil İsmi */
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Okuma İstatistikleri */
+.profile-info p {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+}
+
+/* Butonları İçeren Kutunun Stili */
+.action-box {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+/* Dashboard Butonları */
+.dashboard-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.dashboard-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9c355;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    background-color: #f7505c;
+    color: white;
+}

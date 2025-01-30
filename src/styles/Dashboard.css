@@ -1,0 +1,9 @@
+.dashboard-page {
+    background-color: #fef8f3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem; /* Yukarıda sabit dursun */
+}

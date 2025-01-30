@@ -1,0 +1,34 @@
+/* Remember Me ve Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+}
+
+.forgot-password-link {
+    color: #f7505c;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Butonlar */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+

@@ -1,0 +1,40 @@
+/* Global Styles (Global.css) */
+
+/* Reset */
+* {
+  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px;
+  background-color: #fff;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+
+
+/* Container for BookCard list */
+
+/* 
+.book-list {
+  display: flex;
+  gap: 40px; /* Increased gap for more spacing 
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the cards horizontally 
+  padding: 20px;
+}*/
+/* 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+ */
+
+
+
+
+
+

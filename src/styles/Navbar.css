@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* deneme
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    */
+    height: 80px;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Logo ve yazı arasına boşluk ekler */
+    cursor: pointer;
+  }
+  
+  .logo-circle {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .logo-text {
+    font-size: 26px; /* Yazının boyutu */
+    color: #333; /* Yazı rengi */
+    margin-left: 10px; /* Daha fazla boşluk için gerekirse margin */
+    white-space: nowrap; /* Yazının bölünmesini engeller */
+    margin-bottom: 0;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 3rem;
+    margin-top: 0;
+  }
+  
+  .nav-button {
+    color: #333;
+    background-color: #fff; /* Primary button color */
+    width: 100px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    min-height: 40px;
+    border:none;
+    border-radius: 20px; /* Kenarları daha yuvarlak hale getirildi */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #f7505c; /* Darker shade on hover */
+    color: #fff;
+  }
+  
+  .nav-button.signup {
+    background-color: #f9c355; /* Secondary button color */
+  }
+  
+  .nav-button.signup:hover {
+    background-color: #f7505c; /* Darker shade on hover */
+    color: #fff;
+  }
+
+  .logo:hover {
+    opacity: 0.8; /* Hover efekti */
+}
+  
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 18px; /* Yazıyı küçült */
+      display: none; /* Gerekirse tamamen gizle */
+    }
+  }

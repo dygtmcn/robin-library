@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Nested Boxes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Kırmızı kutu (Container) */
+        .container {
+            background-color: red;
+            width: 80%;
+            padding: 10px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Mavi kutular arasındaki boşluk */
+        }
+
+        /* Mavi kutular */
+        .inner-box {
+            background-color: blue;
+            width: 80%;
+            min-height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Sarı kutular */
+        .small-box {
+            background-color: yellow;
+            width: 45%;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Tasarım */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .inner-box {
+                width: 90%;
+                flex-direction: column;
+                min-height: auto;
+                padding: 15px;
+            }
+
+            .small-box {
+                width: 100%;
+                min-height: 60px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="inner-box">
+            <div class="small-box">Short Text</div>
+            <div class="small-box">Longer Text Here</div>
+        </div>
+
+        <div class="inner-box">
+            <div class="small-box">Another Example</div>
+            <div class="small-box">This is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer textThis is a slightly longer text This is a slightly longer text</div>
+        </div>
+
+        <div class="inner-box">
+            <div class="small-box">Box 3</div>
+            <div class="small-box">More Text</div>
+        </div>
+    </div>
+
+</body>
+</html>

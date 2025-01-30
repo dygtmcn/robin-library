@@ -1,0 +1,89 @@
+/* Tüm sayfa düzeni için */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sayfanın tamamını kapsayan kapsayıcı */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Sayfanın tamamını kaplar */
+}
+
+/* İçeriğin footer'dan önce kalan kısmı */
+.content-wrap {
+  flex: 1; /* İçerik esneyerek sayfanın kalan kısmını doldurur */
+}
+
+/* Footer tasarımı */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  margin-top: auto; /* Footer'ın en alta itilmesini sağlar */
+}
+
+/* Footer içinde bölümler */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.footer-section {
+  flex: 1 1 200px; /* Esnek kolon genişliği */
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  display: block;
+  color: #F7F7F0;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter alanı */
+.newsletter input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  background-color: #f9c355;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #f7505c;
+  color: white;
+}
+
+/* Footer en alt satır */
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}

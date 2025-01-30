@@ -1,0 +1,123 @@
+body{
+  font-family: "Lato", sans-serif;
+}
+
+.summary {
+  background-color: #fef8f3;
+  margin: 80px 3rem;
+  border-radius: 20px;
+  text-align: center;
+  min-height: 80vh; /* 🔹 Auth ile aynı yükseklik */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center /* Üst hizalamayı sabit tut */
+
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+  /* Konteyner genişliğini %100 yap */
+  max-width: 1150px;
+  /* Maksimum genişlik belirle */
+  margin: 2rem;
+  /* Ortalamak için */
+}
+
+.box {
+  flex: 1 1 calc(36% - 1rem);
+  aspect-ratio: 1;
+  background-color: #fff;
+  ;
+  border-radius: 30px;
+  display: flex;
+  /* İçeriği dikey ve yatayda hizalamak için */
+  flex-direction: column;
+  /* İçerikleri alt alta hizalar */
+  justify-content: center;
+  /* Dikey ortalar */
+  align-items: center;
+  /* Yatay ortalar */
+  padding: 2rem;
+  /* İç boşluklar */
+  gap: 1.5rem;
+  /* Elemanlar arası boşluk */
+  text-align: center;
+  /* Yazıları ortalar */
+}
+
+.box h1 {
+  font-size: 1.8rem;
+  /* Başlık yazı boyutunu büyüt */
+  font-weight: bold;
+  /* Kalın yazı */
+  margin: 0;
+}
+
+.box p {
+  font-size: 1.2rem;
+  /* Paragraf yazı boyutunu büyüt */
+  line-height: 1.6;
+  /* Satırlar arasına boşluk ekle */
+  margin: 0;
+}
+
+.box .boxBtn {
+  background-color: #f7505c;
+  color: white;
+  transition: background-color 0.3s ease;
+  width: 60%;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 3rem; /* Sağdan 3rem boşluk */
+}
+
+.box .boxBtn:hover {
+  background-color: #f9c355;
+  /* Hover durumunda daha koyu mavi */
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex: 1 1 calc(50% - 1rem);
+    /* Tablet boyutunda genişlik %50 */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex: 1 1 100%;
+    /* Telefon boyutunda genişlik %100 */
+  }
+}
+
+
+.color-red {
+  background-color: #F0EBFF;
+}
+
+.color-blue {
+  background-color: #FFEDF1;
+}
+
+.color-green {
+  background-color: #c6f1d6;
+}
+
+.color-yellow {
+  background-color: #ffc2d1;
+}
+
+.color-main {
+  background-color: #fef8f3;
+}

@@ -1,0 +1,86 @@
+/* AddBook.css */
+
+.add-book-container {
+    display: flex; /* Flex dĆ¼zeni */
+    flex-wrap: wrap; /* Alt satÄ±ra geĆ§iÅ */
+    justify-content: flex-start; /* Soldan hizalama */
+    gap: 20px; /* Elemanlar arasÄ± boÅluk */
+    max-width: 1200px; /* Sayfa geniÅliÄi iĆ§in sÄ±nÄ±r */
+  }
+  
+  .add-book-btn {
+    width: 220px; /* Sabit geniÅlik */
+    height: 220px; /* Sabit yĆ¼kseklik */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .add-book-btn {
+    border: 2px solid #e4dbf5;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-book-btn:hover {
+    transform: scale(1.02);
+  }
+  
+  .add-book-text {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .add-book-text:hover {
+    border-bottom: 2px solid #333;
+  }
+
+
+  /* Popup için sayfa üzerini kaplayan arka plan */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Saydam koyu arka plan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup içeriği */
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+/* Kapatma butonu */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Buton hover efekti */
+.close-btn:hover {
+  color: red;
+}
